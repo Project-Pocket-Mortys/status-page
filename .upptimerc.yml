@@ -5,6 +5,8 @@ repo: status-page # The name of this repository
 sites:
   - name: Pocket Mortys Server
     url: https://game.conspiracyrick.com
+    expectedStatusCodes:
+      - 200
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
