@@ -4,7 +4,7 @@ repo: status-page # The name of this repository
 
 sites:
   - name: Pocket Mortys Server
-    url: https://www.game.conspiracyrick.com
+    url: https://game.conspiracyrick.com
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
