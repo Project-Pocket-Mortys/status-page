@@ -1,0 +1,28 @@
+name: Status Badge
+on:
+  workflow_run:
+    workflows: ["Uptime CI"]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: master
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Generate badge JSON
+        run: node scripts/status-badge.js
+
+      - name: Commit badge
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add badges/pocket-mortys-server.json
+          git diff --staged --quiet || git commit -m "Update status badge [skip ci]"
+          git push
