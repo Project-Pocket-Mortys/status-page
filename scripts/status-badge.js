@@ -5,7 +5,7 @@ const site = summary.find(s => s.slug === 'pocket-mortys-server');
 
 const badge = {
   schemaVersion: 1,
-  label: 'Server',
+  label: 'Server Status',
   message: site.status,
   color: site.status === 'up' ? 'brightgreen' : 'red'
 };
