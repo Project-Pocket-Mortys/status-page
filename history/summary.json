@@ -4,17 +4,17 @@
     "url": "https://game.conspiracyrick.com",
     "icon": "https://icons.duckduckgo.com/ip3/game.conspiracyrick.com.ico",
     "slug": "pocket-mortys-server",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 6518,
-    "timeDay": 17155,
-    "timeWeek": 6478,
-    "timeMonth": 6518,
-    "timeYear": 6518,
+    "time": 6288,
+    "timeDay": 13787,
+    "timeWeek": 6184,
+    "timeMonth": 6288,
+    "timeYear": 6288,
     "dailyMinutesDown": {}
   }
 ]
